@@ -18,9 +18,9 @@ class OffbPosCtl:
     des_pose = PoseStamped()
     isReadyToFly = False
     # location
-    orientation = quaternion_from_euler(0, 0, 0)
+    orientation = quaternion_from_euler(0, 0, 0) #(roll,pitch,yaw) in radians
     # matrix containing waypoints:
-    # four set points: locations =[x, y, z, next four #s represent yaw (as a quaternion)]
+    # four set points: locations =[x, y, z, q0, q1, q2, q3]
     locations = numpy.matrix([[2, 0, 1, orientation[0], orientation[1], orientation[2], orientation[3]],
                               [30, 2, 10, orientation[0], orientation[1], orientation[2], orientation[3]],
                               [40, 3, 18, orientation[0], orientation[1], orientation[2], orientation[3]],
