@@ -32,9 +32,6 @@ class OffbPosCtl:
                               [10, -40, 17.89, orientation[0], orientation[1], orientation[2], orientation[3]],
                               [12.6, -65, 17.89, orientation[0], orientation[1], orientation[2], orientation[3]],
                               [12.6, -65, 3, orientation[0], orientation[1], orientation[2], orientation[3]]
-
-                              #[-0, 0, 1, orientation[0], orientation[1], orientation[2], orientation[3]],
-                              #[0, 0, 0, 0, 0, 0, 0]
                               ])
 
     def mavrosTopicStringRoot(self, uavID=0):
